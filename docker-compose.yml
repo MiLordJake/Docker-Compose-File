@@ -14,7 +14,7 @@ services:
   webapp:
     build: ./frontend_jake
     environment:
-      - API_URL=http://api:3001/data
+      - API_URL=http://api:3005/data
     depends_on:
       - api
     ports:
