@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   api:
-    build: ./backend
+    build: ./backend_jake
     environment:
       - CONNECTION_STRING=postgres://demo_user:demo_user@db/demo_db
     depends_on:
@@ -12,7 +12,7 @@ services:
       - network-frontend
 
   webapp:
-    build: ./frontend
+    build: ./frontend_jake
     environment:
       - API_URL=http://api:3001/data
     depends_on:
